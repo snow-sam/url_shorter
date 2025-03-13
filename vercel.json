@@ -1,9 +1,20 @@
 {
     "redirects": [
       {
+        "source": "/(assets|components)/.*",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/(style.css|main.js)",
+        "destination": "/",
+        "permanent": false
+      },
+      {
         "source": "/(.+)",
         "destination": "https://www.google.com/$1",
         "permanent": false
       }
     ]
   }
+  
