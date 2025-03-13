@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('assets/font/Helvetica.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100dvh;
+    background-color: #FDFDFD;
+}
+
+section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    top: 30%;
+    gap: 2rem;
+}
+
+span.copyrigth {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    font-size: 16px;
+    border: none;
+    padding-left: 1rem;
+    margin-block: .3rem;
+    background-color: transparent;
+    color: #393232;
+    width: 100%;
+    text-decoration: underline;
+}
+
+form input::placeholder {
+    color: #a59191;
+    text-decoration: none;
+}
+
+form input:focus {
+    outline: none;
+}
+
+div.short-section {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
