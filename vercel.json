@@ -1,8 +1,9 @@
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "destination": "https://www.google.com/$1",
+        "permanent": false
+      }
     ]
-}
+  }
