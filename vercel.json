@@ -1,14 +1,24 @@
 {
     "redirects": [
       {
-        "source": "/(assets|components)/.*",
-        "destination": "/",
-        "permanent": false
+        "source": "/style.css",
+        "destination": "/style.css",
+        "statusCode": 200
       },
       {
-        "source": "/(style.css|main.js)",
-        "destination": "/",
-        "permanent": false
+        "source": "/main.js",
+        "destination": "/main.js",
+        "statusCode": 200
+      },
+      {
+        "source": "/assets/:path*",
+        "destination": "/assets/:path*",
+        "statusCode": 200
+      },
+      {
+        "source": "/components/:path*",
+        "destination": "/components/:path*",
+        "statusCode": 200
       },
       {
         "source": "/(.+)",
