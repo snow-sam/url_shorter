@@ -29,7 +29,7 @@ document.querySelector('form').addEventListener('submit', async (e) => {
 
 
     const shortLink = document.createElement("short-link")
-    shortLink.setAttribute('url', link)
+    shortLink.setAttribute('url', newLink)
 
     shortDiv.appendChild(shortLink)
 })
