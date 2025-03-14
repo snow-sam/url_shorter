@@ -40,10 +40,11 @@ class ShortLink extends HTMLElement {
 
     attributeChangedCallback(name, oldValue, newValue) {
         if (name === "url") {
-            this.a.href = newValue.split('/').pop();;
+            const hash = newValue.split('/').pop();
+            this.a.href = hash
             this.a.innerText = newValue;
             this.imgCopy.onclick = () => navigator.clipboard.writeText(newValue);
-            this.imgExternal.onclick = () => window.open(newValue)
+            this.imgExternal.onclick = () => window.open(hash)
         }
     }
 }
