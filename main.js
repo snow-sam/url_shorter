@@ -1,5 +1,5 @@
 import "./components/short-link/index.js";
-import { SHORT_API } from "./constants.js"
+import { BASE_URL, SHORT_API } from "./constants.js"
 
 const shortDiv = document.querySelector('.external-div')
 
@@ -22,7 +22,7 @@ document.querySelector('form').addEventListener('submit', async (e) => {
         });
         if (!resp.ok) throw new Error("Erro ao encurtar o link");
         const result = await resp.json();
-        newLink = SHORT_API + result.hashValue
+        newLink = BASE_URL + result.hashValue
     } catch (error) {
         console.error("Erro:", error);
     }

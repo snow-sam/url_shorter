@@ -27,7 +27,7 @@
       },
       {
         "source": "/(.+)",
-        "destination": "https://www.google.com/$1",
+        "destination": "https://short-server.onrender.com/shorty/$1",
         "permanent": false
       }
     ]
