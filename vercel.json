@@ -21,6 +21,11 @@
         "statusCode": 200
       },
       {
+        "source": "/constants.js",
+        "destination": "/constants.js",
+        "statusCode": 200
+      },
+      {
         "source": "/(.+)",
         "destination": "https://www.google.com/$1",
         "permanent": false
