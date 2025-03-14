@@ -20,8 +20,8 @@ document.querySelector('form').addEventListener('submit', async (e) => {
             },
             body: JSON.stringify({ url })
         });
-        if (!response.ok) throw new Error("Erro ao encurtar o link");
-        const result = await response.json();
+        if (!resp.ok) throw new Error("Erro ao encurtar o link");
+        const result = await resp.json();
         newLink = SHORT_API + result.hashValue
     } catch (error) {
         console.error("Erro:", error);
